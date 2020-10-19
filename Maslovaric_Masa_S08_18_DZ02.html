@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+*{
+        margin: 0;
+        padding: 0;
+    }
+table {
+  border-collapse: collapse;
+  font-family:serif;
+
+
+}
+#DrugiRed{
+    background-color:lightgreen;
+    color: red;
+}
+
+table, th, td {
+  border: 2px solid green;
+}
+.forma{
+    border-collapse: collapse;
+    border: 2px solid green;
+    width: 500px;
+    margin-left: 20%;
+    
+}
+.ime, .prezime, .jmbg, .potvrda{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family:serif;
+}
+</style>
+<body>
+<table>
+    <thead>
+        <tr>
+            <th style="background-color: lightblue;text-align: center;">Ime</th>
+            <th style="background-color: yellow;text-align: right;">Prezime</th>
+            <th style="background-color:lightgreen;text-align: left;">JMBG</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="background-color:lightblue;text-align: center;">Marko</td>
+            <td style="background-color: yellow;text-align: right;">Marković</td>
+            <td style="background-color:lightgreen;text-align: left;">13059952231123</td>
+        </tr>
+
+        <tr id="DrugiRed">
+            <td style="text-align: center;">Darko</td>
+            <td style="text-align: right;">Petrović</td>
+            <td style="text-align: left;">22079952231123</td>
+        </tr>
+
+        <tr>
+            <td style="background-color:lightblue;text-align: center;">Stefan</td>
+            <td style="background-color: yellow;text-align: right;">Miličić</td>
+            <td style="background-color:lightgreen;text-align: left;">15119832231423</td>
+        </tr>
+    </table>
+<div class="forma">
+<form action="1.php" method="POST">
+    <div class="ime">
+    <label for="fname">Ime</label>
+    <input type="text" name="fname" placeholder=""> <br>
+</div>
+<div class="prezime">
+    <label for="lname">Prezime</label>
+    <input type="text" name="lname" placeholder=""> <br>
+</div>
+<div class="jmbg">
+    <label for="JMBG">JMBG</label>
+    <input type="text" name="JMBG" placeholder=""> <br>
+</div>
+<div class="potvrda">
+    <input type="submit" value="Potvrdi">
+</div>
+</form> 
+</div>
+    </tbody>
+
+
+
+</body>
+</html>
